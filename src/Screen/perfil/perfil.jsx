@@ -1,17 +1,14 @@
 import React from 'react';
 import './perfil.css';
 
-function App() {
+function Perfil({ onBack }) {
   return (
-    <div className="welcome-container">
-      <h1>Perfil</h1>
-      <p>Bienvenido a mi app donde podrás consultar temas interesantes</p>
-      <div className="buttons-container">
-        <button className="primary-button">Ir al listado de temas</button>
-        <button className="secondary-button">Más sobre mí</button>
-      </div>
+    <div className="profile-container">
+      <h2>Mi Perfil</h2>
+      <p>Aquí puedes encontrar información sobre mí.</p>
+      <button className="back-button" onClick={onBack}>Regresar</button>
     </div>
   );
 }
 
-export default App;
+export default Perfil;
